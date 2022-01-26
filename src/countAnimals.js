@@ -2,8 +2,9 @@ const { species } = require('../data/zoo_data');
 
 function countAnimals(animal = 'none') {
   if (animal === 'none') {
-    species.map(({name, popularity}) => {[name] : popularity});
+    const thisAnimal = {};
+    return species.map(({ name, popularity }) => (thisAnimal[name] = popularity));
   }
 }
-
+console.log(countAnimals());
 module.exports = countAnimals;
