@@ -5,7 +5,15 @@ function isManager(id) {
 }
 
 function getRelatedEmployees(managerId) {
-  // seu código aqui
+  if (isManager(managerId) === true) {
+    // acessar cada [managers] de cada objeto em employee
+    employees.managers.map((manager) => {
+      if (manager === managerId) {
+        return `${employees.firstName} ${employees.lastName}`;
+      }
+    });
+  }
 }
 
+console.log(getRelatedEmployees(stephanieId));
 module.exports = { isManager, getRelatedEmployees };

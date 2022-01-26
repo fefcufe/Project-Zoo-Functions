@@ -1,7 +1,9 @@
-const data = require('../data/zoo_data');
+const { species } = require('../data/zoo_data');
 
-function countAnimals(animal) {
-  // seu código aqui
+function countAnimals(animal = 'none') {
+  if (animal === 'none') {
+    species.map(({name, popularity}) => {[name] : popularity});
+  }
 }
 
 module.exports = countAnimals;
