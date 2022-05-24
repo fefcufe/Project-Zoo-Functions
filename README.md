@@ -271,3 +271,6 @@ Caso nenhuma pessoa seja encontrada com o nome, sobrenome ou id, deverá ser lan
 ## Tecnologias utilizadas 
 
 - JavaScript, ES6.
+
+## Observações
+O arquivo data com os dados utilizados nas funções foi criado pela equipe da Trybe.
